@@ -7,6 +7,10 @@ public class ZeroGravity : MonoBehaviour
     private bool status = false;
     public float power = 1f;
 
+    void Start() {
+        Cursor.visible = false;
+    }
+
     void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0))
